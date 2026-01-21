@@ -146,13 +146,13 @@ const states = [
 ]
 ]
 
-app.get('/', (req, res) => {
+app.get('/States', (req, res) => {
     res.send(states);
 });
 
-// app.get('/', (req, res) => {
-//     res.send("Welcome to my State api");
-// });
+app.get('/', (req, res) => {
+    res.send("Welcome to my State api");
+});
 
 app.listen(port, () => {
     console.log(`server running on port ${port}`);
